@@ -20,15 +20,15 @@ const Filter = () => {
   }, [text]);
   useEffect(() => {
     const sortParam =
-      sort === "a-z" || sort === "z-a"
+      sort === "A-Z" || sort === "Z-A"
         ? "company"
         : sort === "En Yeni" || sort === "En Eski"
         ? "date"
         : undefined;
     const orderParam =
-      sort === "a-z" || sort === "En Eski"
+      sort === "A-Z" || sort === "En Eski"
         ? "asc"
-        : sort === "a-z" || sort === "En Yeni"
+        : sort === "A-Z" || sort === "En Yeni"
         ? "desc"
         : undefined;
 
